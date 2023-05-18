@@ -8,7 +8,7 @@
   },
   "author": "Sendy",
   "license": "ISC",
-  "dependencies": {
-    "serve": "^14.2.0"
+  "devDependencies": {
+    "serve": "14.2.0"
   }
 }
