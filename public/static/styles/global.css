@@ -103,7 +103,7 @@ body {
 
 .navbar ul li a {
   line-height: var(--line-height-lg);
-  padding: var(--spacing-xs);
+  padding: var(--spacing-xs) calc(var(--spacing-s) + var(--spacing-xs));
   display: block;
 }
 
