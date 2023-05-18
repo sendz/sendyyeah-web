@@ -1,0 +1,82 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--spacing-s);
+}
+
+.navbar ul {
+  display: none;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  margin-top: var(--spacing-m);
+  padding: var(--spacing-xs);
+  width: -webkit-fill-available;
+}
+
+/* every focus (click) on .mobile-menu, it will show ul */
+.mobile-menu:focus + ul {
+  display: block;
+}
+
+.navbar .header {
+  padding: var(--spacing-s);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--text-black);
+}
+
+.navbar ul li {
+  list-style: none;
+  width: 100%;
+}
+
+.navbar ul li a {
+  line-height: var(--line-height-lg);
+  padding: var(--spacing-xs) calc(var(--spacing-s) + var(--spacing-xs));
+  display: block;
+}
+
+.navbar ul li a:hover {
+  border-radius: var(--spacing-xs);
+  background-color: var(--bg-slate-300);
+  color: var(--text-black);
+}
+
+.mobile-menu {
+  width: var(--spacing-l);
+  height: var(--spacing-l);
+  border: 1px solid var(--bg-slate-300);
+  background: none;
+  padding: var(--spacing-s);
+  border-radius: var(--spacing-s);
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .navbar ul {
+    position: unset;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin: 0;
+  }
+
+  .navbar ul li a {
+    padding: var(--spacing-m);
+  }
+  .mobile-menu {
+    display: none;
+  }
+}
