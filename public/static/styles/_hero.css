@@ -1,0 +1,40 @@
+.hero {
+  background-color: var(--bg-slate-200);
+  place-items: center;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--spacing-l);
+  text-align: center;
+}
+
+.hero .hero-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero .avatar {
+  max-width: calc(var(--spacing-xxl) + var(--spacing-xl));
+}
+
+.hero .button {
+  display: flex;
+  flex: 1 0 auto;
+  margin-right: var(--spacing-s);
+}
+
+.hero p {
+  line-height: var(--line-height-sm);
+  margin-bottom: var(--line-height-xs);
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    min-height: calc(var(--h-screen-size) - var(--spacing-xl));
+    flex-direction: row-reverse;
+    padding: var(--spacing-xxl);
+    text-align: start;
+  }
+}

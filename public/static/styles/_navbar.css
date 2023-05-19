@@ -7,17 +7,15 @@
 }
 
 .navbar ul {
+  background-color: white;
   display: none;
   margin: 0;
   position: absolute;
   left: 0;
-  margin-top: var(--spacing-m);
-  padding: var(--spacing-xs);
+  margin-top: 0;
+  padding: var(--spacing-m) var(--spacing-xs);
   width: -webkit-fill-available;
-}
-
-.navbar ul:hover {
-  display: block;
+  z-index: 100;
 }
 
 /* every focus (click) on .mobile-menu, it will show ul */
@@ -42,7 +40,7 @@
 }
 
 .navbar ul li a {
-  line-height: var(--line-height-lg);
+  line-height: var(--line-height-s);
   padding: var(--spacing-xs) calc(var(--spacing-s) + var(--spacing-xs));
   display: block;
 }
@@ -87,8 +85,5 @@
   }
   .mobile-menu {
     display: none;
-  }
-  .navbar ul:hover {
-    display: flex;
   }
 }

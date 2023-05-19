@@ -1,6 +1,10 @@
 @import "_normalize.css";
 @import "_variable.css";
+@import "_flex.css";
 @import "_navbar.css";
+@import "_hero.css";
+@import "_avatar.css";
+@import "_button.css";
 
 
 body {
