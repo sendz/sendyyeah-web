@@ -16,6 +16,10 @@
   width: -webkit-fill-available;
 }
 
+.navbar ul:hover {
+  display: block;
+}
+
 /* every focus (click) on .mobile-menu, it will show ul */
 .mobile-menu:focus + ul {
   display: block;
